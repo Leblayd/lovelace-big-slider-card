@@ -42,7 +42,7 @@ transition: 0.3
 height: 80
 background_color: '#a45634'
 text_color: '#ffffff'
-border_color: 'ff00ff'
+border_color: '#ff00ff'
 border_radius: '4px'
 border_style: 'dashed'
 border_width: '5px'
@@ -69,30 +69,30 @@ hold_action:
 | Name              | Type    | Requirement  | Description                                    | Default             |
 | ----------------- | ------- | ------------ | ---------------------------------------------- | ------------------- |
 | type              | string  | **Required** | `custom:big-slider-card`                       |                     |
-| entity            | string  | **Required** | Home Assistant entity ID.                      |                     |
-| name              | string  | **Optional** | Name to show on card                           | entity name         |
-| attribute         | string  | **Optional** | Attribute to control                           | `brightness`        |
-| transition        | number  | **Optional** | Transition time (seonds)                       | not used if unset   |
-| height            | number  | **Optional** | Card height in px                              | form theme          |
-| color             | string  | **Optional** | Slider color (CSS format)                      | form theme          |
-| background_color  | string  | **Optional** | Background color (CSS format)                  | form theme          |
-| text_color        | string  | **Optional** | Text color (CSS format)                        | form theme          |
-| icon_color        | string  | **Optional** | Icon color (CSS format)                        | entity color        |
-| border_color      | string  | **Optional** | Border color (CSS format)                      | form theme          |
-| border_radius     | string  | **Optional** | Border radius including units (CSS format)     | form theme          |
-| border_style      | string  | **Optional** | Border style (CSS format)                      | form theme          |
-| border_width      | string  | **Optional** | Border width (CSS format)                      | form theme          |
-| colorize          | boolean | **Optional** | Colorize slider using entity color             | false               |
-| icon              | string  | **Optional** | Sets custom icon                               | entity icon         |
-| show_percentage   | boolean | **Optional** | Show percentage under entity name              | false               |
-| bold_text         | boolean | **Optional** | Make taxt font bold                            | false               |
-| min               | number  | **Optional** | Maximum value for slider                       | `0`                 |
-| max               | number  | **Optional** | Minimum value for slider                       | `100`               |
-| min_slide_time    | number  | **Optional** | Mimimum time to prevent accidental changes (ms)| `0`                 |
-| hold_time         | number  | **Optional** | Hold gesture time (ms)                         | `600`               |
-| settle_time       | number  | **Optional** | Ignore updates after changig the value (ms)    | `3000`              |
-| tap_action        | object  | **Optional** | Action to take on tap                          | `action: toggle`    |
-| hold_action       | object  | **Optional** | Action to take on hold                         | `action: more-info` |
+| entity            | string  | **Required** | Home Assistant entity ID                       |                     |
+| name              | string  |              | Name to show on card                           | entity name         |
+| attribute         | string  |              | Attribute to control                           | `brightness`        |
+| transition        | number  |              | Transition time (seconds)                      | `0`                 |
+| height            | number  |              | Card height (px)                               | from theme          |
+| color             | string  |              | Slider color (CSS format)                      | from theme          |
+| background_color  | string  |              | Background color (CSS format)                  | from theme          |
+| text_color        | string  |              | Text color (CSS format)                        | from theme          |
+| icon_color        | string  |              | Icon color (CSS format)                        | entity color        |
+| border_color      | string  |              | Border color (CSS format)                      | from theme          |
+| border_radius     | string  |              | Border radius including units (CSS format)     | from theme          |
+| border_style      | string  |              | Border style (CSS format)                      | from theme          |
+| border_width      | string  |              | Border width (CSS format)                      | from theme          |
+| colorize          | boolean |              | Colorize slider using entity color             | `false`             |
+| icon              | string  |              | Sets custom icon                               | entity icon         |
+| show_percentage   | boolean |              | Show percentage under entity name              | `false`             |
+| bold_text         | boolean |              | Make text font bold                            | `false`             |
+| min               | number  |              | Minimum value for slider                       | `0`                 |
+| max               | number  |              | Maximum value for slider                       | `100`               |
+| min_slide_time    | number  |              | Mimimum time to prevent accidental changes (ms)| `0`                 |
+| hold_time         | number  |              | Hold gesture time (ms)                         | `600`               |
+| settle_time       | number  |              | Ignore updates after changing the value (ms)   | `3000`              |
+| tap_action        | object  |              | Action to take on tap                          | `action: toggle`    |
+| hold_action       | object  |              | Action to take on hold                         | `action: more-info` |
 
 For more info about the rest of the action options see this page: [Actions - Home Assistant][actions]
 
